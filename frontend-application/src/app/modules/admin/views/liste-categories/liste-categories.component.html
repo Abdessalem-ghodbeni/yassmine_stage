@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <h3 class="mb-4">Category List</h3>
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Category Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of listeCategorie">
+        <td>{{ category.idCategorie }}</td>
+        <td>{{ category.name }}</td>
+        <td>
+          <button
+            class="btn btn-sm btn-danger me-2"
+            (click)="supprimercategorie(category.idCategorie)"
+          >
+            <!-- " -->
+            <i class="bi bi-trash"></i> Delete
+          </button>
+          <button class="btn btn-sm btn-warning me-2">
+            <!-- (click)="editCategory(category.idCategorie)" -->
+            <i class="bi bi-pencil-square"></i> Edit
+          </button>
+          <button
+            class="btn btn-sm btn-primary"
+            (click)="selectediD(category.idCategorie)"
+          >
+            <!-- (click)="showDetails(category.idCategorie)" -->
+            <i class="bi bi-info-circle"></i> Show Details
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

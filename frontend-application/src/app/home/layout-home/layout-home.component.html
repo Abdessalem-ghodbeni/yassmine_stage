@@ -1,0 +1,821 @@
+<div
+  class="alert alert-warning py-2 m-0 bg-primary border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden"
+  role="alert"
+>
+  <p class="text-white m-0">don't forget palestine</p>
+  <!-- Close button -->
+  <button
+    type="button"
+    class="btn-close btn-close-white opacity-9 p-3"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<!-- Top alert END -->
+
+<!-- Header START -->
+<header class="navbar-light header-sticky">
+  <!-- Logo Nav START -->
+  <nav class="navbar navbar-expand-xl">
+    <div class="container">
+      <!-- Logo START -->
+      <a class="navbar-brand" href="index.html">
+        <img
+          class="light-mode-item navbar-brand-item"
+          src="assets/images/vegoo.png"
+          alt="logo"
+        />
+      </a>
+      <!-- Logo END -->
+
+      <!-- Responsive navbar toggler -->
+      <button
+        class="navbar-toggler ms-auto mx-3 me-xl-0 p-0 p-sm-1"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-animation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
+        <!-- Dark mode options START -->
+        <li class="nav-item dropdown me-2">
+          <button
+            class="btn btn-link text-warning p-0 mb-0"
+            id="bd-theme"
+            type="button"
+            aria-expanded="false"
+            data-bs-toggle="dropdown"
+            data-bs-display="static"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-circle-half theme-icon-active fa-fw"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+              />
+              <use href="#"></use>
+            </svg>
+          </button>
+
+          <ul
+            class="dropdown-menu min-w-auto dropdown-menu-end"
+            aria-labelledby="bd-theme"
+          >
+            <li class="mb-1">
+              <button
+                type="button"
+                class="dropdown-item d-flex align-items-center"
+                data-bs-theme-value="light"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-brightness-high-fill fa-fw mode-switch me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  />
+                  <use href="#"></use></svg
+                >Light
+              </button>
+            </li>
+            <li class="mb-1">
+              <button
+                type="button"
+                class="dropdown-item d-flex align-items-center"
+                data-bs-theme-value="dark"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-moon-stars-fill fa-fw mode-switch me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                  />
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                  />
+                  <use href="#"></use></svg
+                >Dark
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="dropdown-item d-flex align-items-center active"
+                data-bs-theme-value="auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-circle-half fa-fw mode-switch me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+                  />
+                  <use href="#"></use></svg
+                >Auto
+              </button>
+            </li>
+          </ul>
+        </li>
+        <!-- Dark mode options END -->
+
+        <!-- Search -->
+        <li class="nav-item dropdown nav-search me-2">
+          <a
+            class="nav-link mb-0 py-0"
+            role="button"
+            href="#"
+            id="navSearch"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+            data-bs-display="static"
+          >
+            <i class="bi bi-search fs-5"> </i>
+          </a>
+        </li>
+
+        <!-- Sign In button -->
+        <li class="nav-item ms-2 d-none d-sm-block">
+          <a href="signup" class="btn btn-sm btn-primary-soft mb-0 me-3"
+            ><i class="fa-solid fa-right-to-bracket me-2"></i>Sign Up</a
+          >
+
+          <a href="signin" class="btn btn-sm btn-primary-soft mb-0 me-3"
+            ><i class="fa-solid fa-right-to-bracket me-2"></i>Login</a
+          >
+        </li>
+      </ul>
+      <!-- Navbar right side END -->
+    </div>
+  </nav>
+  <!-- Logo Nav END -->
+</header>
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+  <!-- =======================
+Main Banner START -->
+  <section class="pt-3 pt-lg-5">
+    <div class="container position-relative">
+      <!-- Bg image -->
+      <div
+        class="rounded-3 p-4 p-sm-5"
+        style="
+          background-image: url(assets/images/forum.webp);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <!-- Banner title -->
+        <div class="row justify-content-between pt-0 pb-5">
+          <div class="col-md-7"></div>
+          <!-- <div class="col-md-7 col-lg-8 col-xxl-7 pb-5 mb-0 mb-lg-5">
+            <h1 class="text-white">
+              La Vie est un Questionnaire : Posez des Questions, Obtenez des
+              Réponses
+            </h1>
+            <p class="text-white mb-0">
+              Besoin de collecter des données ? Nous vous aidons à créer et
+              partager des formulaires personnalisés pour obtenir des réponses
+              précises et améliorer vos services !
+            </p>
+          </div> -->
+
+          <!-- Produce item START -->
+          <div class="col-md-5 col-lg-4 col-xl-3 mb-3 mb-sm-0">
+            <div class="card shadow p-2 pb-0">
+              <!-- Offer badge -->
+              <div
+                class="position-absolute top-0 start-0 mt-n3 ms-n3 z-index-9"
+              ></div>
+
+              <div class="rounded-3 overflow-hidden position-relative">
+                <!-- Image -->
+                <img
+                  src="assets/images/forum-bleux.jpeg"
+                  class="card-img"
+                  alt=""
+                />
+                <!-- Overlay -->
+                <div class="bg-overlay bg-dark opacity-4"></div>
+              </div>
+              <!-- Card body -->
+              <div class="card-body px-2">
+                <!-- Badge and Rating -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <a
+                    href="#"
+                    class="badge bg-primary bg-opacity-10 text-primary"
+                    >Adventure</a
+                  >
+                  <!-- Rating -->
+                  <h6 class="fw-light m-0">
+                    <i class="fa-solid fa-star text-warning me-2"></i>4.5
+                  </h6>
+                </div>
+
+                <!-- Title -->
+                <h6 class="card-title">
+                  <a href="#">Posez des Questions, Obtenez des Réponses</a>
+                </h6>
+
+                <!-- Badge and Price -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-0"
+                >
+                  <!-- Price -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Produce item END -->
+        </div>
+      </div>
+
+      <!-- Search START -->
+
+      <!-- Search END -->
+
+      <!-- Recent Search START -->
+      <div class="row g-2 mt-6">
+        <!-- Title -->
+        <div class="col-lg-2">
+          <h4 class="mb-0">Recent Questions</h4>
+        </div>
+
+        <div class="col-lg-10">
+          <div class="hstack flex-wrap gap-3">
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1">Quel est votre artiste préféré ?</span>
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1">Lisez-vous régulièrement des livres ?</span>
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1">Glacier National Park</span>
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1"
+                >Pratiquez-vous un sport ? Si oui, lequel ?</span
+              >
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1"
+                >Prenez-vous des médicaments ou des suppléments régulièrement
+                ?</span
+              >
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1">Préférez-vous Android ou iOS ?</span>
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1">Votez-vous lors des élections ?</span>
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1">Avez-vous un lieu de voyage favori ?</span>
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <div
+              class="alert bg-light fade show small px-3 py-1 mb-0"
+              role="alert"
+            >
+              <span class="me-1">Faites-vous vos achats en ligne ?</span>
+              <button
+                type="button"
+                class="btn-close small p-2"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <!-- Search item -->
+            <button type="button" class="btn btn-sm btn-primary-soft mb-0">
+              Clear all
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Recent Search END -->
+    </div>
+  </section>
+  <!-- =======================
+Main Banner END -->
+
+  <!-- =======================
+Best deal START -->
+  <section class="pb-2 pb-lg-5"></section>
+  <!-- =======================
+Best deal END -->
+
+  <!-- =======================
+About START -->
+  <section class="pb-0 pb-xl-5">
+    <div class="container">
+      <div class="row g-4 justify-content-between align-items-center">
+        <!-- Left side START -->
+        <div class="col-lg-5 position-relative">
+          <!-- Svg Decoration -->
+          <figure
+            class="position-absolute top-0 start-0 translate-middle z-index-1 ms-4"
+          >
+            <svg class="fill-warning" width="77px" height="77px">
+              <path
+                d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z"
+              />
+            </svg>
+          </figure>
+
+          <!-- Svg decoration -->
+          <figure
+            class="position-absolute bottom-0 end-0 d-none d-md-block mb-n5 me-n4"
+          >
+            <svg
+              height="400"
+              class="fill-primary opacity-2"
+              viewBox="0 0 340 340"
+            >
+              <circle cx="194.2" cy="2.2" r="2.2"></circle>
+              <circle cx="2.2" cy="2.2" r="2.2"></circle>
+              <circle cx="218.2" cy="2.2" r="2.2"></circle>
+              <circle cx="26.2" cy="2.2" r="2.2"></circle>
+              <circle cx="242.2" cy="2.2" r="2.2"></circle>
+              <circle cx="50.2" cy="2.2" r="2.2"></circle>
+              <circle cx="266.2" cy="2.2" r="2.2"></circle>
+              <circle cx="74.2" cy="2.2" r="2.2"></circle>
+              <circle cx="290.2" cy="2.2" r="2.2"></circle>
+              <circle cx="98.2" cy="2.2" r="2.2"></circle>
+              <circle cx="314.2" cy="2.2" r="2.2"></circle>
+              <circle cx="122.2" cy="2.2" r="2.2"></circle>
+              <circle cx="338.2" cy="2.2" r="2.2"></circle>
+              <circle cx="146.2" cy="2.2" r="2.2"></circle>
+              <circle cx="170.2" cy="2.2" r="2.2"></circle>
+              <circle cx="194.2" cy="26.2" r="2.2"></circle>
+              <circle cx="2.2" cy="26.2" r="2.2"></circle>
+              <circle cx="218.2" cy="26.2" r="2.2"></circle>
+              <circle cx="26.2" cy="26.2" r="2.2"></circle>
+              <circle cx="242.2" cy="26.2" r="2.2"></circle>
+              <circle cx="50.2" cy="26.2" r="2.2"></circle>
+              <circle cx="266.2" cy="26.2" r="2.2"></circle>
+              <circle cx="74.2" cy="26.2" r="2.2"></circle>
+              <circle cx="290.2" cy="26.2" r="2.2"></circle>
+              <circle cx="98.2" cy="26.2" r="2.2"></circle>
+              <circle cx="314.2" cy="26.2" r="2.2"></circle>
+              <circle cx="122.2" cy="26.2" r="2.2"></circle>
+              <circle cx="338.2" cy="26.2" r="2.2"></circle>
+              <circle cx="146.2" cy="26.2" r="2.2"></circle>
+              <circle cx="170.2" cy="26.2" r="2.2"></circle>
+              <circle cx="194.2" cy="50.2" r="2.2"></circle>
+              <circle cx="2.2" cy="50.2" r="2.2"></circle>
+              <circle cx="218.2" cy="50.2" r="2.2"></circle>
+              <circle cx="26.2" cy="50.2" r="2.2"></circle>
+              <circle cx="242.2" cy="50.2" r="2.2"></circle>
+              <circle cx="50.2" cy="50.2" r="2.2"></circle>
+              <circle cx="266.2" cy="50.2" r="2.2"></circle>
+              <circle cx="74.2" cy="50.2" r="2.2"></circle>
+              <circle cx="290.2" cy="50.2" r="2.2"></circle>
+              <circle cx="98.2" cy="50.2" r="2.2"></circle>
+              <circle cx="314.2" cy="50.2" r="2.2"></circle>
+              <circle cx="122.2" cy="50.2" r="2.2"></circle>
+              <circle cx="338.2" cy="50.2" r="2.2"></circle>
+              <circle cx="146.2" cy="50.2" r="2.2"></circle>
+              <circle cx="170.2" cy="50.2" r="2.2"></circle>
+              <circle cx="194.2" cy="74.2" r="2.2"></circle>
+              <circle cx="2.2" cy="74.2" r="2.2"></circle>
+              <circle cx="218.2" cy="74.2" r="2.2"></circle>
+              <circle cx="26.2" cy="74.2" r="2.2"></circle>
+              <circle cx="242.2" cy="74.2" r="2.2"></circle>
+              <circle cx="50.2" cy="74.2" r="2.2"></circle>
+              <circle cx="266.2" cy="74.2" r="2.2"></circle>
+              <circle cx="74.2" cy="74.2" r="2.2"></circle>
+              <circle cx="290.2" cy="74.2" r="2.2"></circle>
+              <circle cx="98.2" cy="74.2" r="2.2"></circle>
+              <circle cx="314.2" cy="74.2" r="2.2"></circle>
+              <circle cx="122.2" cy="74.2" r="2.2"></circle>
+              <circle cx="338.2" cy="74.2" r="2.2"></circle>
+              <circle cx="146.2" cy="74.2" r="2.2"></circle>
+              <circle cx="170.2" cy="74.2" r="2.2"></circle>
+              <circle cx="194.2" cy="98.2" r="2.2"></circle>
+              <circle cx="2.2" cy="98.2" r="2.2"></circle>
+              <circle cx="218.2" cy="98.2" r="2.2"></circle>
+              <circle cx="26.2" cy="98.2" r="2.2"></circle>
+              <circle cx="242.2" cy="98.2" r="2.2"></circle>
+              <circle cx="50.2" cy="98.2" r="2.2"></circle>
+              <circle cx="266.2" cy="98.2" r="2.2"></circle>
+              <circle cx="74.2" cy="98.2" r="2.2"></circle>
+              <circle cx="290.2" cy="98.2" r="2.2"></circle>
+              <circle cx="98.2" cy="98.2" r="2.2"></circle>
+              <circle cx="314.2" cy="98.2" r="2.2"></circle>
+              <circle cx="122.2" cy="98.2" r="2.2"></circle>
+              <circle cx="338.2" cy="98.2" r="2.2"></circle>
+              <circle cx="146.2" cy="98.2" r="2.2"></circle>
+              <circle cx="170.2" cy="98.2" r="2.2"></circle>
+              <circle cx="194.2" cy="122.2" r="2.2"></circle>
+              <circle cx="2.2" cy="122.2" r="2.2"></circle>
+              <circle cx="218.2" cy="122.2" r="2.2"></circle>
+              <circle cx="26.2" cy="122.2" r="2.2"></circle>
+              <circle cx="242.2" cy="122.2" r="2.2"></circle>
+              <circle cx="50.2" cy="122.2" r="2.2"></circle>
+              <circle cx="266.2" cy="122.2" r="2.2"></circle>
+              <circle cx="74.2" cy="122.2" r="2.2"></circle>
+              <circle cx="290.2" cy="122.2" r="2.2"></circle>
+              <circle cx="98.2" cy="122.2" r="2.2"></circle>
+              <circle cx="314.2" cy="122.2" r="2.2"></circle>
+              <circle cx="122.2" cy="122.2" r="2.2"></circle>
+              <circle cx="338.2" cy="122.2" r="2.2"></circle>
+              <circle cx="146.2" cy="122.2" r="2.2"></circle>
+              <circle cx="170.2" cy="122.2" r="2.2"></circle>
+              <circle cx="194.2" cy="146.2" r="2.2"></circle>
+              <circle cx="2.2" cy="146.2" r="2.2"></circle>
+              <circle cx="218.2" cy="146.2" r="2.2"></circle>
+              <circle cx="26.2" cy="146.2" r="2.2"></circle>
+              <circle cx="242.2" cy="146.2" r="2.2"></circle>
+              <circle cx="50.2" cy="146.2" r="2.2"></circle>
+              <circle cx="266.2" cy="146.2" r="2.2"></circle>
+              <circle cx="74.2" cy="146.2" r="2.2"></circle>
+              <circle cx="290.2" cy="146.2" r="2.2"></circle>
+              <circle cx="98.2" cy="146.2" r="2.2"></circle>
+              <circle cx="314.2" cy="146.2" r="2.2"></circle>
+              <circle cx="122.2" cy="146.2" r="2.2"></circle>
+              <circle cx="338.2" cy="146.2" r="2.2"></circle>
+              <circle cx="146.2" cy="146.2" r="2.2"></circle>
+              <circle cx="170.2" cy="146.2" r="2.2"></circle>
+              <circle cx="194.2" cy="170.2" r="2.2"></circle>
+              <circle cx="2.2" cy="170.2" r="2.2"></circle>
+              <circle cx="218.2" cy="170.2" r="2.2"></circle>
+              <circle cx="26.2" cy="170.2" r="2.2"></circle>
+              <circle cx="242.2" cy="170.2" r="2.2"></circle>
+              <circle cx="50.2" cy="170.2" r="2.2"></circle>
+              <circle cx="266.2" cy="170.2" r="2.2"></circle>
+              <circle cx="74.2" cy="170.2" r="2.2"></circle>
+              <circle cx="290.2" cy="170.2" r="2.2"></circle>
+              <circle cx="98.2" cy="170.2" r="2.2"></circle>
+              <circle cx="314.2" cy="170.2" r="2.2"></circle>
+              <circle cx="122.2" cy="170.2" r="2.2"></circle>
+              <circle cx="338.2" cy="170.2" r="2.2"></circle>
+              <circle cx="146.2" cy="170.2" r="2.2"></circle>
+              <circle cx="170.2" cy="170.2" r="2.2"></circle>
+              <circle cx="194.2" cy="194.2" r="2.2"></circle>
+              <circle cx="2.2" cy="194.2" r="2.2"></circle>
+              <circle cx="218.2" cy="194.2" r="2.2"></circle>
+              <circle cx="26.2" cy="194.2" r="2.2"></circle>
+              <circle cx="242.2" cy="194.2" r="2.2"></circle>
+              <circle cx="50.2" cy="194.2" r="2.2"></circle>
+              <circle cx="266.2" cy="194.2" r="2.2"></circle>
+              <circle cx="74.2" cy="194.2" r="2.2"></circle>
+              <circle cx="290.2" cy="194.2" r="2.2"></circle>
+              <circle cx="98.2" cy="194.2" r="2.2"></circle>
+              <circle cx="314.2" cy="194.2" r="2.2"></circle>
+              <circle cx="122.2" cy="194.2" r="2.2"></circle>
+              <circle cx="338.2" cy="194.2" r="2.2"></circle>
+              <circle cx="146.2" cy="194.2" r="2.2"></circle>
+              <circle cx="170.2" cy="194.2" r="2.2"></circle>
+              <circle cx="194.2" cy="218.2" r="2.2"></circle>
+              <circle cx="2.2" cy="218.2" r="2.2"></circle>
+              <circle cx="218.2" cy="218.2" r="2.2"></circle>
+              <circle cx="26.2" cy="218.2" r="2.2"></circle>
+              <circle cx="242.2" cy="218.2" r="2.2"></circle>
+              <circle cx="50.2" cy="218.2" r="2.2"></circle>
+              <circle cx="266.2" cy="218.2" r="2.2"></circle>
+              <circle cx="74.2" cy="218.2" r="2.2"></circle>
+              <circle cx="290.2" cy="218.2" r="2.2"></circle>
+              <circle cx="98.2" cy="218.2" r="2.2"></circle>
+              <circle cx="314.2" cy="218.2" r="2.2"></circle>
+              <circle cx="122.2" cy="218.2" r="2.2"></circle>
+              <circle cx="338.2" cy="218.2" r="2.2"></circle>
+              <circle cx="146.2" cy="218.2" r="2.2"></circle>
+              <circle cx="170.2" cy="218.2" r="2.2"></circle>
+              <circle cx="194.2" cy="242.2" r="2.2"></circle>
+              <circle cx="2.2" cy="242.2" r="2.2"></circle>
+              <circle cx="218.2" cy="242.2" r="2.2"></circle>
+              <circle cx="26.2" cy="242.2" r="2.2"></circle>
+              <circle cx="242.2" cy="242.2" r="2.2"></circle>
+              <circle cx="50.2" cy="242.2" r="2.2"></circle>
+              <circle cx="266.2" cy="242.2" r="2.2"></circle>
+              <circle cx="74.2" cy="242.2" r="2.2"></circle>
+              <circle cx="290.2" cy="242.2" r="2.2"></circle>
+              <circle cx="98.2" cy="242.2" r="2.2"></circle>
+              <circle cx="314.2" cy="242.2" r="2.2"></circle>
+              <circle cx="122.2" cy="242.2" r="2.2"></circle>
+              <circle cx="338.2" cy="242.2" r="2.2"></circle>
+              <circle cx="146.2" cy="242.2" r="2.2"></circle>
+              <circle cx="170.2" cy="242.2" r="2.2"></circle>
+              <circle cx="194.2" cy="266.2" r="2.2"></circle>
+              <circle cx="2.2" cy="266.2" r="2.2"></circle>
+              <circle cx="218.2" cy="266.2" r="2.2"></circle>
+              <circle cx="26.2" cy="266.2" r="2.2"></circle>
+              <circle cx="242.2" cy="266.2" r="2.2"></circle>
+              <circle cx="50.2" cy="266.2" r="2.2"></circle>
+              <circle cx="266.2" cy="266.2" r="2.2"></circle>
+              <circle cx="74.2" cy="266.2" r="2.2"></circle>
+              <circle cx="290.2" cy="266.2" r="2.2"></circle>
+              <circle cx="98.2" cy="266.2" r="2.2"></circle>
+              <circle cx="314.2" cy="266.2" r="2.2"></circle>
+              <circle cx="122.2" cy="266.2" r="2.2"></circle>
+              <circle cx="338.2" cy="266.2" r="2.2"></circle>
+              <circle cx="146.2" cy="266.2" r="2.2"></circle>
+              <circle cx="170.2" cy="266.2" r="2.2"></circle>
+              <circle cx="194.2" cy="290.2" r="2.2"></circle>
+              <circle cx="2.2" cy="290.2" r="2.2"></circle>
+              <circle cx="218.2" cy="290.2" r="2.2"></circle>
+              <circle cx="26.2" cy="290.2" r="2.2"></circle>
+              <circle cx="242.2" cy="290.2" r="2.2"></circle>
+              <circle cx="50.2" cy="290.2" r="2.2"></circle>
+              <circle cx="266.2" cy="290.2" r="2.2"></circle>
+              <circle cx="74.2" cy="290.2" r="2.2"></circle>
+              <circle cx="290.2" cy="290.2" r="2.2"></circle>
+              <circle cx="98.2" cy="290.2" r="2.2"></circle>
+              <circle cx="314.2" cy="290.2" r="2.2"></circle>
+              <circle cx="122.2" cy="290.2" r="2.2"></circle>
+              <circle cx="338.2" cy="290.2" r="2.2"></circle>
+              <circle cx="146.2" cy="290.2" r="2.2"></circle>
+              <circle cx="170.2" cy="290.2" r="2.2"></circle>
+              <circle cx="194.2" cy="314.2" r="2.2"></circle>
+              <circle cx="2.2" cy="314.2" r="2.2"></circle>
+              <circle cx="218.2" cy="314.2" r="2.2"></circle>
+              <circle cx="26.2" cy="314.2" r="2.2"></circle>
+              <circle cx="242.2" cy="314.2" r="2.2"></circle>
+              <circle cx="50.2" cy="314.2" r="2.2"></circle>
+              <circle cx="266.2" cy="314.2" r="2.2"></circle>
+              <circle cx="74.2" cy="314.2" r="2.2"></circle>
+              <circle cx="290.2" cy="314.2" r="2.2"></circle>
+              <circle cx="98.2" cy="314.2" r="2.2"></circle>
+              <circle cx="314.2" cy="314.2" r="2.2"></circle>
+              <circle cx="122.2" cy="314.2" r="2.2"></circle>
+              <circle cx="338.2" cy="314.2" r="2.2"></circle>
+              <circle cx="146.2" cy="314.2" r="2.2"></circle>
+              <circle cx="170.2" cy="314.2" r="2.2"></circle>
+              <circle cx="194.2" cy="338.2" r="2.2"></circle>
+              <circle cx="2.2" cy="338.2" r="2.2"></circle>
+              <circle cx="218.2" cy="338.2" r="2.2"></circle>
+              <circle cx="26.2" cy="338.2" r="2.2"></circle>
+              <circle cx="242.2" cy="338.2" r="2.2"></circle>
+              <circle cx="50.2" cy="338.2" r="2.2"></circle>
+              <circle cx="266.2" cy="338.2" r="2.2"></circle>
+              <circle cx="74.2" cy="338.2" r="2.2"></circle>
+              <circle cx="290.2" cy="338.2" r="2.2"></circle>
+              <circle cx="98.2" cy="338.2" r="2.2"></circle>
+              <circle cx="314.2" cy="338.2" r="2.2"></circle>
+              <circle cx="122.2" cy="338.2" r="2.2"></circle>
+              <circle cx="338.2" cy="338.2" r="2.2"></circle>
+              <circle cx="146.2" cy="338.2" r="2.2"></circle>
+              <circle cx="170.2" cy="338.2" r="2.2"></circle>
+            </svg>
+          </figure>
+
+          <!-- Image -->
+          <img
+            src="assets/images/forum-bleux.jpeg"
+            class="rounded-3 position-relative w-100"
+            alt=""
+          />
+          <img
+            src="assets/images/f.png"
+            class="rounded-3 position-relative w-100"
+            alt=""
+          />
+          <!-- Client rating START -->
+          <div class="position-absolute bottom-0 start-0 z-index-1 mb-4 ms-5">
+            <div
+              class="bg-body d-flex d-inline-block rounded-3 position-relative p-3"
+            >
+              <!-- Element -->
+              <img
+                src="assets/images/forum.webp"
+                class="position-absolute top-0 start-0 translate-middle w-40px"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Client rating END -->
+        </div>
+        <!-- Left side END -->
+
+        <!-- Right side START -->
+        <div class="col-lg-6">
+          <h2 class="mb-3 mb-lg-5">
+            Posez des Questions, Obtenez des Réponses!
+          </h2>
+          <p class="mb-3 mb-lg-5">
+            Besoin de collecter des données ? Nous vous aidons à créer et
+            partager des formulaires personnalisés pour obtenir des réponses
+            précises et améliorer vos services !
+          </p>
+
+          <!-- Features START -->
+          <div class="row g-4">
+            <!-- Item -->
+
+            <!-- Item -->
+            <div class="col-sm-12">
+              <div
+                class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"
+              >
+                <i class="bi bi-stopwatch-fill"></i>
+              </div>
+              <h5 class="mt-2">Services</h5>
+              <p class="mb-0">
+                Profitez de notre expertise pour améliorer votre expérience.
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="col-sm-6">
+              <div
+                class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"
+              >
+                <i class="bi bi-shield-fill-check"></i>
+              </div>
+              <h5 class="mt-2">High Security</h5>
+              <p class="mb-0">
+                Nous mettons à votre disposition des outils innovants pour
+                faciliter vos démarches
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="col-sm-6">
+              <div
+                class="icon-lg bg-info bg-opacity-10 text-info rounded-circle"
+              >
+                <i class="bi bi-lightning-fill"></i>
+              </div>
+              <h5 class="mt-2">24 / 24 disponible</h5>
+              <p class="mb-0">
+                Nous nous engageons à fournir des services de haute qualité
+              </p>
+            </div>
+          </div>
+          <!-- Features END -->
+        </div>
+        <!-- Right side END -->
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Help -->
+        <div class="col-md-6 col-xxl-4">
+          <div class="bg-body d-flex rounded-3 h-100 p-4">
+            <h3><i class="fa-solid fa-hand-holding-heart"></i></h3>
+            <div class="ms-3">
+              <h5>24x7 Help</h5>
+              <p class="mb-0">
+                If we fall short of your expectation in any way, let us know
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust -->
+        <div class="col-md-6 col-xxl-4">
+          <div class="bg-body d-flex rounded-3 h-100 p-4">
+            <h3><i class="fa-solid fa-hand-holding-usd"></i></h3>
+            <div class="ms-3">
+              <h5>Payment Trust</h5>
+              <p class="mb-0">
+                All refunds come with no questions asked guarantee
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download app -->
+        <div class="col-lg-6 col-xl-5 col-xxl-3 ms-xxl-auto">
+          <h5 class="mb-4">Download app</h5>
+          <div class="row g-3">
+            <!-- Google play store button -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-6">
+              <a href="#">
+                <img src="assets/images/element/google-play.svg" alt="" />
+              </a>
+            </div>
+            <!-- App store button -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-6">
+              <a href="#">
+                <img src="assets/images/element/app-store.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======================
+Download app END -->
+</main>

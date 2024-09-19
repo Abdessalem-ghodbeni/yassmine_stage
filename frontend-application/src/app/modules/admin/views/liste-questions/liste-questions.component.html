@@ -1,0 +1,67 @@
+<div class="card shadow mt-5">
+  <!-- Card header -->
+  <div class="card-header border-bottom">
+    <h5 class="card-title mb-0">Liste des Questions</h5>
+  </div>
+
+  <!-- Card body START -->
+  <div class="card-body">
+    <!-- Table START -->
+    <table class="table table-bordered table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Catégorie</th>
+          <th scope="col">Titre</th>
+          <th scope="col">Description</th>
+          <th scope="col">Statut</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let question of listeQuestions; let i = index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ question.categorie.name }}</td>
+          <td>{{ question.titre }}</td>
+          <td>{{ question.description }}</td>
+          <td>
+            <span
+              class="badge"
+              [ngClass]="question.solved ? 'bg-success' : 'bg-danger'"
+            >
+              {{ question.solved ? "Résolu" : "Non résolu" }}
+            </span>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-primary me-2">
+              <i class="bi bi-eye"></i> Voir détails
+            </button>
+            <button class="btn btn-sm btn-warning me-2">
+              <i class="bi bi-pencil-square"></i> Éditer
+            </button>
+            <button
+              class="btn btn-sm btn-danger"
+              (click)="supprimerUneQuestion(question.idQuestion)"
+            >
+              <i class="bi bi-trash"></i> Supprimer
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Table END -->
+  </div>
+  <!-- Card body END -->
+
+  <!-- Card footer START -->
+  <div class="card-footer pt-0">
+    <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+      <!-- Content -->
+      <p class="mb-sm-0 text-center text-sm-start">
+        Showing 1 to {{ listeQuestions.length }} of
+        {{ listeQuestions.length }} entries
+      </p>
+    </div>
+  </div>
+  <!-- Card footer END -->
+</div>

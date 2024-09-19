@@ -1,0 +1,134 @@
+<section class="pt-0">
+  <div class="container vstack gap-4">
+    <!-- Title START -->
+    <div class="row">
+      <div class="col-12">
+        <h1 class="fs-4 mb-0">
+          <i class="fas fa-plus icon mx-2"></i>Ajouter questions
+        </h1>
+      </div>
+    </div>
+    <div class="row g-4 g-lg-5 align-items-center">
+      <!-- Vector image START -->
+      <div class="col-lg-6 text-center">
+        <img src="assets/images/element/contact.svg" alt="" />
+      </div>
+      <!-- Vector image END -->
+
+      <!-- Contact form START -->
+      <div class="col-lg-6">
+        <div class="card bg-light p-4">
+          <!-- Svg decoration -->
+          <figure class="position-absolute end-0 bottom-0 mb-n4 me-n2">
+            <svg class="fill-orange" width="104.2px" height="95.2px">
+              <circle cx="2.6" cy="92.6" r="2.6" />
+              <circle cx="2.6" cy="77.6" r="2.6" />
+              <circle cx="2.6" cy="62.6" r="2.6" />
+              <circle cx="2.6" cy="47.6" r="2.6" />
+              <circle cx="2.6" cy="32.6" r="2.6" />
+              <circle cx="2.6" cy="17.6" r="2.6" />
+              <circle cx="2.6" cy="2.6" r="2.6" />
+              <circle cx="22.4" cy="92.6" r="2.6" />
+              <circle cx="22.4" cy="77.6" r="2.6" />
+              <circle cx="22.4" cy="62.6" r="2.6" />
+              <circle cx="22.4" cy="47.6" r="2.6" />
+              <circle cx="22.4" cy="32.6" r="2.6" />
+              <circle cx="22.4" cy="17.6" r="2.6" />
+              <circle cx="22.4" cy="2.6" r="2.6" />
+              <circle cx="42.2" cy="92.6" r="2.6" />
+              <circle cx="42.2" cy="77.6" r="2.6" />
+              <circle cx="42.2" cy="62.6" r="2.6" />
+              <circle cx="42.2" cy="47.6" r="2.6" />
+              <circle cx="42.2" cy="32.6" r="2.6" />
+              <circle cx="42.2" cy="17.6" r="2.6" />
+              <circle cx="42.2" cy="2.6" r="2.6" />
+              <circle cx="62" cy="92.6" r="2.6" />
+              <circle cx="62" cy="77.6" r="2.6" />
+              <circle cx="62" cy="62.6" r="2.6" />
+              <circle cx="62" cy="47.6" r="2.6" />
+              <circle cx="62" cy="32.6" r="2.6" />
+              <circle cx="62" cy="17.6" r="2.6" />
+              <circle cx="62" cy="2.6" r="2.6" />
+              <circle cx="81.8" cy="92.6" r="2.6" />
+              <circle cx="81.8" cy="77.6" r="2.6" />
+              <circle cx="81.8" cy="62.6" r="2.6" />
+              <circle cx="81.8" cy="47.6" r="2.6" />
+              <circle cx="81.8" cy="32.6" r="2.6" />
+              <circle cx="81.8" cy="17.6" r="2.6" />
+              <circle cx="81.8" cy="2.6" r="2.6" />
+              <circle cx="101.7" cy="92.6" r="2.6" />
+              <circle cx="101.7" cy="77.6" r="2.6" />
+              <circle cx="101.7" cy="62.6" r="2.6" />
+              <circle cx="101.7" cy="47.6" r="2.6" />
+              <circle cx="101.7" cy="32.6" r="2.6" />
+              <circle cx="101.7" cy="17.6" r="2.6" />
+              <circle cx="101.7" cy="2.6" r="2.6" />
+            </svg>
+          </figure>
+
+          <!-- Card header -->
+          <div class="card-header bg-light p-0 pb-3">
+            <h3 class="mb-0">Poser Votre question ...</h3>
+          </div>
+
+          <!-- Card body START -->
+          <div class="card-body p-0">
+            <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+              <!-- Titre -->
+              <div class="col-md-12">
+                <label class="form-label">Sujet de question *</label>
+                <input
+                  formControlName="titre"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <!-- Description -->
+              <div class="col-12 mt-2">
+                <label class="form-label">Description de question *</label>
+                <textarea
+                  formControlName="description"
+                  class="form-control"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Catégorie -->
+              <div class="col-12 mt-2">
+                <label class="form-label">Catégorie de question *</label>
+                <select
+                  formControlName="categorieId"
+                  class="form-control"
+                  required
+                >
+                  <option
+                    *ngFor="let categorie of listeCategorie"
+                    [value]="categorie.idCategorie"
+                  >
+                    {{ categorie.name }}
+                  </option>
+                </select>
+              </div>
+
+              <!-- Bouton -->
+              <div class="col-12 mt-3">
+                <button
+                  class="btn btn-dark mb-0"
+                  type="submit"
+                  [disabled]="!questionForm.valid"
+                >
+                  Ajouter Question
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- Card body END -->
+        </div>
+      </div>
+      <!-- Contact form END -->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,207 @@
+<section class="pt-0">
+  <div class="container vstack gap-4">
+    <div
+      *ngFor="let question of listeQuestions"
+      class="col-12 position-relative overflow-hidden ms-5"
+    >
+      <div class="bg-primary bg-opacity-10 rounded-3 h-100 p-4 w-75">
+        <div class="d-flex justify-content-start align-items-center">
+          <div class="icon-lg text-white rounded-circle flex-shrink-0">
+            <img
+              [src]="getImageUrl(question?.utilisateur?.image)"
+              alt="{{ question.utilisateur.nom }}"
+              class="rounded-circle"
+              style="width: 50px; height: 50px"
+            />
+          </div>
+          <div>
+            <h4 class="mb-1 mx-3">{{ question.utilisateur.nom }}</h4>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <span
+            *ngIf="question.solved != false"
+            class="badge rounded-pill bg-info"
+            >Résolut</span
+          >
+          <span
+            *ngIf="question.solved != true"
+            class="badge rounded-pill bg-danger"
+            >Non Résolut</span
+          >
+        </div>
+
+        <div class="ms-3">
+          <p class="mb-1">
+            <strong>Catégorie :</strong>
+            <span class="badge rounded-pill bg-warning text-dark mx-2">{{
+              question.categorie.name
+            }}</span>
+          </p>
+          <h5>Sujet : {{ question.titre }}</h5>
+          <p class="text-justify">
+            <strong
+              >Description du question : {{ question.description }}</strong
+            >
+          </p>
+        </div>
+
+        <div class="d-flex justify-content-start mt-3">
+          <button
+            class="btn btn-success mx-2"
+            (click)="toggleLike(question.idQuestion)"
+          >
+            <i class="bi bi-hand-thumbs-up"></i> {{ question.totalLikes }}
+          </button>
+          <button
+            class="btn btn-danger"
+            (click)="toggleDislike(question.idQuestion)"
+          >
+            <i class="bi bi-hand-thumbs-down"></i> {{ question.totalDislikes }}
+          </button>
+          <button
+            class="btn btn-primary w-100 mx-2"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            (click)="selectediD(question.idQuestion)"
+          >
+            <i class="bi bi-chat-dots"></i> Répondre avec commentaire...
+          </button>
+        </div>
+
+        <!-- <div class="d-flex justify-content-start mt-3">
+          <button class="btn btn-success mx-2">
+            <i class="bi bi-hand-thumbs-up"></i>
+          </button>
+          <button class="btn btn-danger">
+            <i class="bi bi-hand-thumbs-down"></i>
+          </button>
+          <button
+            class="btn btn-primary w-100 mx-2"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            (click)="selectediD(question.idQuestion)"
+          >
+            <i class="bi bi-chat-dots"></i> Répondre avec commenaire...
+          </button>
+        </div> -->
+
+        <!-- comment -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card border">
+              <!-- Card header -->
+              <div class="card-header border-bottom">
+                <h5 class="card-header-title">liste des réponses</h5>
+              </div>
+
+              <!-- Card body START -->
+              <div class="card-body" *ngFor="let reponse of question.reponses">
+                <!-- Activity item START -->
+                <div
+                  class="d-sm-flex justify-content-between align-items-center"
+                >
+                  <!-- Avatar image -->
+                  <div class="d-flex align-items-sm-center me-4 ms-sm-0">
+                    <div class="avatar flex-shrink-0">
+                      <img
+                        class="avatar-img rounded-circle"
+                        [src]="getImageUrl(reponse?.utilisateur?.image)"
+                        alt=""
+                      />
+                    </div>
+                    <div class="ms-3">
+                      <h6 class="fw-light m-0">
+                        {{ reponse.utilisateur.nom }}
+                      </h6>
+                      <small class="me-3">{{ reponse.date | date }}</small>
+                      <p>{{ reponse.texte }}</p>
+                      <!-- Texte de la réponse -->
+                    </div>
+                    <!-- Title -->
+                  </div>
+                  <!-- Buttons -->
+                  <div class="d-flex gap-2 mt-2 mt-sm-0">
+                    <button
+                      *ngIf="reponse.correctAnswer != true"
+                      class="btn btn-sm btn-primary-soft"
+                      (click)="validerResponse(reponse.idReponse)"
+                    >
+                      Bon reponse
+                    </button>
+                    <span
+                      *ngIf="reponse.correctAnswer != false"
+                      class="badge rounded-pill bg-success"
+                      >bonne reponse</span
+                    >
+                  </div>
+                </div>
+                <!-- Activity item END -->
+
+                <hr />
+                <!-- Divider -->
+              </div>
+              <!-- Card body END -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fin for -->
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="reponsequestion" (ngSubmit)="nSubmit()">
+          <div class="col-12 mt-2">
+            <label class="form-label">Votre reponse*</label>
+            <textarea
+              formControlName="texte"
+              class="form-control"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+
+          <div class="col-12 mt-3">
+            <button
+              class="btn btn-dark mb-0"
+              type="submit"
+              [disabled]="!reponsequestion.valid"
+            >
+              envoyer votre reponse
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
