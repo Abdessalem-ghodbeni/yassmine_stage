@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 import { QuestionService } from 'src/app/core/services/questions/question.service';
 import Swal from 'sweetalert2';
 
@@ -11,7 +12,10 @@ export class ListeCategoriesComponent implements OnInit {
   listeCategorie: any[] = [];
   Category!: any;
   idcategorie!: number;
-  constructor(private questionService: QuestionService) {}
+  constructor(
+    private questionService: QuestionService,
+    private route: Router
+  ) {}
   loadCategories() {
     this.questionService.getAllCategori().subscribe(
       (data) => {
@@ -31,6 +35,13 @@ export class ListeCategoriesComponent implements OnInit {
     this.idcategorie = id;
     console.log('dddd', this.idcategorie);
     this.getCategorieByid();
+  }
+  voirDetails(id: number) {
+    this.route.navigate(['/admin/categorie-details/', id]);
+  }
+
+  editCategory(id: number) {
+    this.route.navigate(['/admin/categorie-edit/', id]);
   }
 
   getCategorieByid() {

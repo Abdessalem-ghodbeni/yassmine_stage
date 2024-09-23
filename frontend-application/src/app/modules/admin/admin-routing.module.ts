@@ -5,6 +5,8 @@ import { AjouterCategorieComponent } from './views/ajouter-categorie/ajouter-cat
 import { ListeCategoriesComponent } from './views/liste-categories/liste-categories.component';
 import { ListeQuestionsComponent } from './views/liste-questions/liste-questions.component';
 import { ListeUserComponent } from './views/liste-user/liste-user.component';
+import { CategorieDetailsComponent } from './views/categorie-details/categorie-details.component';
+import { UpdateCategorieComponent } from './views/update-categorie/update-categorie.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
       {
         path: 'liste-user',
         component: ListeUserComponent,
+      },
+      {
+        path: 'categorie-details/:id',
+        component: CategorieDetailsComponent,
+      },
+      {
+        path: 'categorie-edit/:id',
+        component: UpdateCategorieComponent,
       },
     ],
   },

@@ -100,42 +100,6 @@ public class QuestionsController {
     }
 
 
-//
-//
-//    @PutMapping("/{id}/dislike")
-//    public ResponseEntity<Questions> dislikeQuestion(@PathVariable Long id) {
-//        Questions question = questionsService.incrementDislike(id);
-//        return question != null ? ResponseEntity.ok(question) : ResponseEntity.notFound().build();
-//    }
-//
-//
-//    @PutMapping("/{id}/dislike/decrement")
-//    public ResponseEntity<Questions> decrementDislike(@PathVariable Long id) {
-//        Questions question = questionsService.decrementDislike(id);
-//        return question != null ? ResponseEntity.ok(question) : ResponseEntity.notFound().build();
-//    }
-//
-//
-//
-//
-//
-//
-//
-//    @PutMapping("/{id}/likes")
-//    public ResponseEntity<Questions> likeQuestion(@PathVariable Long id) {
-//        Questions question = questionsService.incrementlike(id);
-//        return question != null ? ResponseEntity.ok(question) : ResponseEntity.notFound().build();
-//    }
-//
-//
-//    @PutMapping("/{id}/like/decrement")
-//    public ResponseEntity<Questions> decrementlike(@PathVariable Long id) {
-//        Questions question = questionsService.decrementlikes(id);
-//        return question != null ? ResponseEntity.ok(question) : ResponseEntity.notFound().build();
-//    }
-//
-//
-
 
 
 

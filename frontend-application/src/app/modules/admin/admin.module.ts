@@ -8,6 +8,8 @@ import { ListeCategoriesComponent } from './views/liste-categories/liste-categor
 import { ReactiveFormsModule } from '@angular/forms';
 import { ListeQuestionsComponent } from './views/liste-questions/liste-questions.component';
 import { ListeUserComponent } from './views/liste-user/liste-user.component';
+import { CategorieDetailsComponent } from './views/categorie-details/categorie-details.component';
+import { UpdateCategorieComponent } from './views/update-categorie/update-categorie.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { ListeUserComponent } from './views/liste-user/liste-user.component';
     ListeCategoriesComponent,
     ListeQuestionsComponent,
     ListeUserComponent,
+    CategorieDetailsComponent,
+    UpdateCategorieComponent,
   ],
   imports: [CommonModule, AdminRoutingModule, ReactiveFormsModule],
 })

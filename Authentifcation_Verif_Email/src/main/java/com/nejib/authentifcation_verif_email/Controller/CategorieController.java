@@ -43,7 +43,7 @@ public class CategorieController {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("categroey/edit/{id}")
     public ResponseEntity<Categorie> updateCategorie(@PathVariable Long id, @RequestBody Categorie categorieDetails) {
         Optional<Categorie> categorieOptional = categorieService.findCategorieById(id);
         if (!categorieOptional.isPresent()) {

@@ -20,13 +20,16 @@
             <!-- " -->
             <i class="bi bi-trash"></i> Delete
           </button>
-          <button class="btn btn-sm btn-warning me-2">
+          <button
+            class="btn btn-sm btn-warning me-2"
+            (click)="editCategory(category.idCategorie)"
+          >
             <!-- (click)="editCategory(category.idCategorie)" -->
             <i class="bi bi-pencil-square"></i> Edit
           </button>
           <button
             class="btn btn-sm btn-primary"
-            (click)="selectediD(category.idCategorie)"
+            (click)="voirDetails(category.idCategorie)"
           >
             <!-- (click)="showDetails(category.idCategorie)" -->
             <i class="bi bi-info-circle"></i> Show Details

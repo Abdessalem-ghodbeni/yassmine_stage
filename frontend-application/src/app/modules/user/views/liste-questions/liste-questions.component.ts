@@ -49,7 +49,7 @@ export class ListeQuestionsComponent implements OnInit {
   }
 
   getImageUrl(image: string): string {
-    const baseUrl = 'http://localhost:8089/freelance/auth';
+    const baseUrl = 'http://localhost:8089/vegoo/auth';
     return `${baseUrl}/${image}`;
   }
 

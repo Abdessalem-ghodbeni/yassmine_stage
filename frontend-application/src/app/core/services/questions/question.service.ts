@@ -112,55 +112,19 @@ export class QuestionService {
       );
   }
 
-  // incrementer_dislike(idquestion: any) {
-  //   return this.http
-  //     .put(`${environment.baseUrl}/api/questions/${idquestion}/dislike`, null)
-  //     .pipe(
-  //       catchError((error) => {
-  //         console.log('errrr', error);
-  //         throw error;
-  //       })
-  //     );
-  // }
-
-  // Desincrementer_dislike(idquestion: any) {
-  //   return this.http
-  //     .put(
-  //       `${environment.baseUrl}/api/questions/${idquestion}/dislike/decrement`,
-  //       null
-  //     )
-  //     .pipe(
-  //       catchError((error) => {
-  //         console.log('errrr', error);
-  //         throw error;
-  //       })
-  //     );
-  // }
-
-  // incrementer_liks(idquestion: any) {
-  //   return this.http
-  //     .put(`${environment.baseUrl}/api/questions/${idquestion}/likes`, null)
-  //     .pipe(
-  //       catchError((error) => {
-  //         console.log('errrr', error);
-  //         throw error;
-  //       })
-  //     );
-  // }
-
-  // deincrementer_liks(idquestion: any) {
-  //   return this.http
-  //     .put(
-  //       `${environment.baseUrl}/api/questions/${idquestion}/like/decrement`,
-  //       null
-  //     )
-  //     .pipe(
-  //       catchError((error) => {
-  //         console.log('errrr', error);
-  //         throw error;
-  //       })
-  //     );
-  // }
+  modifierCategore(id: any, categorie: any) {
+    return this.http
+      .put(
+        `${environment.baseUrl}/api/categories/categroey/edit/${id}`,
+        categorie
+      )
+      .pipe(
+        catchError((error) => {
+          console.log('errrr', error);
+          throw error;
+        })
+      );
+  }
 
   incrementer_liks(idquestion: any, userId: any) {
     return this.http
