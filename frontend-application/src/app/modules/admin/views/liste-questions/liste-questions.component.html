@@ -3,11 +3,19 @@
   <div class="card-header border-bottom">
     <h5 class="card-title mb-0">Liste des Questions</h5>
   </div>
-
   <!-- Card body START -->
   <div class="card-body">
+    <ng-template #noData>
+      <div class="alert alert-secondary" role="alert">
+        accune question en ce moment...
+      </div>
+    </ng-template>
     <!-- Table START -->
-    <div class="table-responsive">
+
+    <div
+      *ngIf="listeQuestions && listeQuestions.length > 0; else noData"
+      class="table-responsive"
+    >
       <table class="table table-bordered table-hover table-responsive">
         <thead class="thead-light">
           <tr>
