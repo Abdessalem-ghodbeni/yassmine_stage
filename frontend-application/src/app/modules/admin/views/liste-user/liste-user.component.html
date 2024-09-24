@@ -94,8 +94,8 @@
               <i
                 class="fa-solid"
                 [ngClass]="{
-                  'fa-check-circle text-success': user.verified,
-                  'fa-times-circle text-danger': !user.verified
+                  'fa-check-circle text-success': !user.verified,
+                  'fa-times-circle text-danger': user.verified
                 }"
               ></i>
             </h6>

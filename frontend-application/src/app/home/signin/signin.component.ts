@@ -69,7 +69,7 @@ export class SigninComponent {
           if (res.userDetails.role === Role.USER) {
             this.router.navigateByUrl('/user/poser-question');
           } else {
-            this.router.navigateByUrl('/admin/ajouter-categorie');
+            this.router.navigateByUrl('/admin/liste-user');
           }
         }
       },
